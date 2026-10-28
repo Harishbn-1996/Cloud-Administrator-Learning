@@ -5,8 +5,10 @@ $ServiceName = "Spooler"
 Write-Host "Checking service: $ServiceName"
 
 try {
-    Get-Service -Name $ServiceName -ErrorAction Stop |
-        Select-Object Name, Status
+    $Service = Get-Service -Name $ServiceName -ErrorAction Stop
+
+Write-Host "Service Name: $($Service.Name)"
+Write-Host "Service Status: $($Service.Status)"
 }
 catch {
     Write-Host "Could not find or access the service: $ServiceName"
