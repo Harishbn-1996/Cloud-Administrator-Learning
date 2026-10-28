@@ -19,3 +19,11 @@ This folder contains PowerShell scripts created for basic IT and Cloud Administr
 - Windows Firewall status checks
 - Server connectivity troubleshooting
 - Basic scripting and documentation
+
+- ### 3. Get-ComputerInfo.ps1
+
+**Purpose:** Displays basic information about the Windows computer.
+
+**Commands used:** `Get-ComputerInfo` and `Select-Object`
+
+
