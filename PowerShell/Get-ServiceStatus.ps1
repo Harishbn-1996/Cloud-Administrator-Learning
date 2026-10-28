@@ -1,16 +1,19 @@
-# Windows Service Status Checker
-# Purpose: Check a service and handle errors
+# Multiple Windows Service Status Checker
+# Purpose: Check the status of selected Windows services
 
-$ServiceName = "Spooler"
-Write-Host "Checking service: $ServiceName"
+$ServiceNames = @("Spooler", "wuauserv", "W32Time")
 
-try {
-    $Service = Get-Service -Name $ServiceName -ErrorAction Stop
+foreach ($ServiceName in $ServiceNames) {
+    Write-Host "`nChecking service: $ServiceName"
 
-Write-Host "Service Name: $($Service.Name)"
-Write-Host "Service Status: $($Service.Status)"
-}
-catch {
-    Write-Host "Could not find or access the service: $ServiceName"
-    Write-Host $_.Exception.Message
+    try {
+        $Service = Get-Service -Name $ServiceName -ErrorAction Stop
+
+        Write-Host "Service Name: $($Service.Name)"
+        Write-Host "Service Status: $($Service.Status)"
+    }
+    catch {
+        Write-Host "Could not find or access the service: $ServiceName"
+        Write-Host $_.Exception.Message
+    }
 }
