@@ -39,5 +39,12 @@ This folder contains PowerShell scripts created for basic IT and Cloud Administr
 **Commands used:** `Get-Service` and `Select-Object`
 
 **Example:** Checks whether the Print Spooler service is running or stopped.
+### 5. Get-ServiceStatus.ps1
+
+**Purpose:** Checks the status of multiple Windows services.
+
+**Commands used:** `Get-Service`, `foreach`, `try`, and `catch`.
+
+**Example services:** Print Spooler, Windows Update, and Windows Time.
 
 
