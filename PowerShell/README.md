@@ -26,4 +26,10 @@ This folder contains PowerShell scripts created for basic IT and Cloud Administr
 
 **Commands used:** `Get-ComputerInfo` and `Select-Object`
 
+### 4. Test-ServerAvailability.ps1
+
+**Purpose:** Checks whether a server responds to connectivity tests.
+
+**Commands used:** `Test-Connection` and `Write-Host`
+
 
