@@ -2,6 +2,7 @@
 # Purpose: Check a service and handle errors
 
 $ServiceName = "Spooler"
+Write-Host "Checking service: $ServiceName"
 
 try {
     Get-Service -Name $ServiceName -ErrorAction Stop |
