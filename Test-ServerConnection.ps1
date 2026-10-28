@@ -3,4 +3,6 @@
 
 $ServerName = "example.com"
 
+Write-Host "Checking connectivity to $ServerName..."
+
 Test-Connection -ComputerName $ServerName -Count 2
