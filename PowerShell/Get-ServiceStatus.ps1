@@ -1,7 +1,7 @@
 # Windows Service Status Checker
 # Purpose: Check a service and handle errors
 
-$ServiceName = "FakeService123"
+$ServiceName = "Spooler"
 
 try {
     Get-Service -Name $ServiceName -ErrorAction Stop |
