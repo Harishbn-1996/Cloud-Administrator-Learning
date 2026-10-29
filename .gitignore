@@ -1,0 +1,9 @@
+# Temporary files
+*.tmp
+*.log
+
+# PowerShell editor backup files
+*.ps1.bak
+
+# Local environment files
+.env
