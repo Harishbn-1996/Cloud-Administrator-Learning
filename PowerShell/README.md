@@ -48,3 +48,15 @@ This folder contains PowerShell scripts created for basic IT and Cloud Administr
 **Example services:** Print Spooler, Windows Update, and Windows Time.
 
 
+## How to Use These Scripts
+
+1. Open the script you want to use.
+2. Review the commands before running it.
+3. Run the script in Windows PowerShell on a compatible Windows computer.
+4. Check the output for the results.
+5. Test scripts in a safe environment before using them at work.
+
+**Note:** These scripts are stored on GitHub for documentation and learning. They do not run automatically from the repository.
+
+
+
