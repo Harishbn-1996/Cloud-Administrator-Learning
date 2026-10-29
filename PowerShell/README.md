@@ -58,5 +58,16 @@ This folder contains PowerShell scripts created for basic IT and Cloud Administr
 
 **Note:** These scripts are stored on GitHub for documentation and learning. They do not run automatically from the repository.
 
+**Example output:**
+
+| Name | Enabled |
+|---|---|
+| Domain | True |
+| Private | True |
+| Public | True |
+
+*Example only. Actual firewall status depends on the computer being checked.*
+
+
 
 
